@@ -6,14 +6,22 @@ import Event from './Event';
 import Topic from './Topic';
 import News from './News';
 import Footer from './Footer';
+import Button from './Button';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Event name = "event1" />
-      <Topic name = "topic1" />
-      <News name = "news1" />
+      <div className = "eventComponent">
+        <Event name = "event1" />
+      </div>
+      <Button text = "button1" linkURL = "#" />
+      <div className = "topicComponent">
+        <Topic name = "topic1" />
+      </div>
+      <div className = "newsComponent">
+        <News name = "news1" />
+      </div>
       <Footer />
     </div>
   );
