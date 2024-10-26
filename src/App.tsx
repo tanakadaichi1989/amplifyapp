@@ -9,7 +9,7 @@ import Footer from './Footer';
 import Button from './Button';
 import Separator from './Separator';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faLine, faInstagram, faYoutube, IconDefinition } from '@fortawesome/free-brands-svg-icons';
+import { faLine, faInstagram, faFacebook, faTwitter, faYoutube, IconDefinition } from '@fortawesome/free-brands-svg-icons';
 
 interface IEvent {
   name: string
@@ -50,9 +50,10 @@ function App() {
   ]
 
   let snsList: ISNS[] = [
-    {name: faTwitter},
     {name: faLine},
     {name: faInstagram},
+    {name: faFacebook},
+    {name: faTwitter},
     {name: faYoutube}
   ]
 
