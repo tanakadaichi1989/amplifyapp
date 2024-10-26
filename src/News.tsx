@@ -1,7 +1,9 @@
 import React from 'react';
 
 interface Props {
-    name: string
+    photoURL: string
+    kind: string
+    title: string
 }
 
 class News extends React.Component<Props> {
@@ -14,7 +16,7 @@ class News extends React.Component<Props> {
             <div className="News">
                 <div className="newsPhoto">     
                 </div>
-                <h3>{this.props.name}</h3>
+                <h3>{this.props.title}</h3>
             </div>
         )
     }

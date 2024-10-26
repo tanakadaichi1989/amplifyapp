@@ -58,7 +58,7 @@ function App() {
       <div className = "topicComponent">
         {
           topics.map((topic) => {
-            return <Topic name = {topic.title} />
+            return <Topic photoURL = {topic.photoURL} kind = {topic.kind} title = {topic.title} />
           })
         }
         <Button text = "button2" linkURL = "#" />
@@ -67,7 +67,7 @@ function App() {
       <div className = "newsComponent">
         {
           newsList.map((news) => {
-            return <News name = {news.title} />
+            return <News photoURL = {news.photoURL} kind = {news.kind} title = {news.title} />
           })
         }
         <Button text = "button3" linkURL = "#" />
