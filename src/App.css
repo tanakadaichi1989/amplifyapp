@@ -156,6 +156,24 @@
   border-bottom: #EEEEEE solid 1px;
 }
 
+.SNS {
+  font-size: 100px;
+  margin: 0 50px;
+  color: #282c34;
+}
+
+.SNS:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.SNSicons {
+  margin: 0 auto;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
 .Footer {
   padding-top: 100px;
   height: 300px;

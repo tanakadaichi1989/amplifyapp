@@ -8,6 +8,7 @@ import News from './News';
 import Footer from './Footer';
 import Button from './Button';
 import Separator from './Separator';
+import SNS from './SNS';
 
 interface IEvent {
   name: string
@@ -23,6 +24,10 @@ interface INews {
   photoURL: string,
   kind: string,
   title: string
+}
+
+interface ISNS {
+  name: string
 }
 
 function App() {
@@ -41,6 +46,12 @@ function App() {
     { photoURL: "#", kind: "kind1", title: "News1" },
     { photoURL: "#", kind: "kind2", title: "News2" },
     { photoURL: "#", kind: "kind3", title: "News3" }
+  ]
+
+  let snsList: ISNS[] = [
+    { name: "A"},
+    { name: "B"},
+    { name: "C"},
   ]
 
   return (
@@ -81,6 +92,19 @@ function App() {
         <Button text = "Go to News List" linkURL = "#" />
       </div>
       <Separator />
+      <div>
+        <div className = "componentTitle">
+          <h2>FOLLOW ME</h2>
+          <p>SNS</p>
+          <div className="SNSicons">
+          {
+            snsList.map((sns) => {
+              return <SNS name = {sns.name} />
+            })
+          }
+          </div>
+        </div>        
+      </div>
       <Footer />
     </div>
   );
