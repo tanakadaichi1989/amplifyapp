@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  padding-top: 100px;
 }
 
 .App-logo {
@@ -35,4 +35,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 4%;
+  align-items: center;
+  background-color: white;
+  border-bottom:#EEEEEE 1px solid;
 }
