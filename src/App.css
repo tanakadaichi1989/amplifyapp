@@ -70,3 +70,8 @@
   color: white;
   transition: color 0.3s, background-color 0.3s;
 }
+
+.separator {
+  padding: 10px 80px;
+  border-bottom: #EEEEEE solid 1px;
+}

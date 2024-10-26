@@ -7,6 +7,7 @@ import Topic from './Topic';
 import News from './News';
 import Footer from './Footer';
 import Button from './Button';
+import Separator from './Separator';
 
 function App() {
   return (
@@ -15,13 +16,16 @@ function App() {
       <div className = "eventComponent">
         <Event name = "event1" />
       </div>
+      <Separator />
       <Button text = "button1" linkURL = "#" />
       <div className = "topicComponent">
         <Topic name = "topic1" />
       </div>
+      <Separator />
       <div className = "newsComponent">
         <News name = "news1" />
       </div>
+      <Separator />
       <Footer />
     </div>
   );
