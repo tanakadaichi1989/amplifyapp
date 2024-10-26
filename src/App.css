@@ -48,6 +48,23 @@
   border-bottom:#EEEEEE 1px solid;
 }
 
+.eventComponent {
+  padding-left: 4%;
+  top: 300px;
+}
+
+.Event {
+  width: 400px;
+  display: inline-block;
+  margin-right: 4%;
+}
+
+.eventPhoto {
+  height: 400px;
+  width: 400px;
+  background-color: #EEEEEE;
+}
+
 .ButtonComponent {
   width: 100%;
   height: 50px;
