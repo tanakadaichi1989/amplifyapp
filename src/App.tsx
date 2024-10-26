@@ -34,19 +34,22 @@ interface ISNS {
 function App() {
   let events: IEvent[] = [
     { name: "event1" },
-    { name: "event2" }
+    { name: "event2" },
+    { name: "event3" },
   ]
 
   let topics: ITopic[] = [
-    { photoURL: "#", kind: "kind1", title: "Topic1" },
-    { photoURL: "#", kind: "kind2", title: "Topic2" },
-    { photoURL: "#", kind: "kind3", title: "Topic3" }
+    { photoURL: "#", kind: "Fashion", title: "Topic1" },
+    { photoURL: "#", kind: "Beauty", title: "Topic2" },
+    { photoURL: "#", kind: "Life Style", title: "Topic3" },
+    { photoURL: "#", kind: "Life Style", title: "Topic4" }
   ]
 
   let newsList: INews[] = [
-    { photoURL: "#", kind: "kind1", title: "News1" },
-    { photoURL: "#", kind: "kind2", title: "News2" },
-    { photoURL: "#", kind: "kind3", title: "News3" }
+    { photoURL: "#", kind: "Fashion", title: "News1" },
+    { photoURL: "#", kind: "Fashion", title: "News2" },
+    { photoURL: "#", kind: "Food", title: "News3" },
+    { photoURL: "#", kind: "Life Style", title: "News4" }
   ]
 
   let snsList: ISNS[] = [
