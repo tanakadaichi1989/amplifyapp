@@ -14,8 +14,8 @@ class News extends React.Component<Props> {
     render(){
         return(
             <div className="News">
-                <div className="newsPhoto">     
-                </div>
+                <div className="newsPhoto"></div>
+                <p className="newsKind">{this.props.kind}</p>
                 <h3>{this.props.title}</h3>
             </div>
         )

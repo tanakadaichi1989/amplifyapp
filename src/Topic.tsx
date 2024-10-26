@@ -14,8 +14,8 @@ class Topic extends React.Component<Props> {
     render(){
         return(
             <div className="Topic">
-                <div className="topicPhoto">     
-                </div>
+                <div className="topicPhoto"></div>
+                <p className="topicKind">{this.props.kind}</p>
                 <h3>{this.props.title}</h3>
             </div>
         )
