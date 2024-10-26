@@ -8,7 +8,8 @@ import News from './News';
 import Footer from './Footer';
 import Button from './Button';
 import Separator from './Separator';
-import SNS from './SNS';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faLine, faInstagram, faYoutube, IconDefinition } from '@fortawesome/free-brands-svg-icons';
 
 interface IEvent {
   name: string
@@ -27,7 +28,7 @@ interface INews {
 }
 
 interface ISNS {
-  name: string
+  name: IconDefinition
 }
 
 function App() {
@@ -49,9 +50,10 @@ function App() {
   ]
 
   let snsList: ISNS[] = [
-    { name: "A"},
-    { name: "B"},
-    { name: "C"},
+    {name: faTwitter},
+    {name: faLine},
+    {name: faInstagram},
+    {name: faYoutube}
   ]
 
   return (
@@ -93,13 +95,13 @@ function App() {
       </div>
       <Separator />
       <div>
-        <div className = "componentTitle">
-          <h2>FOLLOW ME</h2>
-          <p>SNS</p>
+        <div className = "componentTitle" id = "snsComponent">
+          <h2>FOLLOW US</h2>
+          <FontAwesomeIcon icon={["fab", "github"]} />
           <div className="SNSicons">
           {
             snsList.map((sns) => {
-              return <SNS name = {sns.name} />
+              return <FontAwesomeIcon icon={sns.name} className = "SNS" />
             })
           }
           </div>
